@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="1.css">
+  <title>花朵展览网站</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>美丽花朵展览</h1>
+    <div class="flower-gallery">
+      <!-- 这里将动态添加花朵图片 -->
+    </div>
+  </div>
+  <script src="1.js"></script>
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <style>
+    /* 整体容器样式 */
+   .carousel-container {
+      perspective: 1000px;
+      width: 400px;
+      height: 300px;
+      margin: 50px auto;
+    }
+
+    /* 轮播容器样式 */
+   .carousel {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transform-style: preserve-3d;
+      animation: rotateCarousel 5s linear infinite;
+    }
+
+    /* 图片样式 */
+   .carousel img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.8;
+    }
+
+    /* 动画定义 */
+    @keyframes rotateCarousel {
+      from {
+        transform: rotateY(0deg);
+      }
+      to {
+        transform: rotateY(360deg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="carousel-container">
+    <div class="carousel">
+      <img src="img1.jpg" alt="Image 1">
+      <img src="img2.jpg" alt="Image 2">
+      <img src="img3.jpg" alt="Image 3">
+    </div>
+  </div>
+
+  <script>
+    // 这里不需要额外的 JavaScript 代码，仅依靠 CSS 动画实现轮播效果
+  </script>
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/brython@3.9.1/brython.min.js"></script>
+</head>
+<body onload="brython({debug:1})">
+    <script type="text/python3">
+        # 在这里写入你的Python代码
+        print("Hello, Brython!")
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Gallery</title>
+<link rel="stylesheet" href="1.css">
+</head>
+<body>
+ 
+<div class="gallery">
+  <div class="image-container">
+    <img class="active" src="img6.jpg" alt="Image 1">
+    <img src="img4.jpg" alt="Image 2">
+    <img src="img5.jpg" alt="Image 3">
+    <!-- More images... -->
+  </div>
+  <!-- Navigation controls -->
+  <button class="prev">Previous</button>
+  <button class="next">Next</button>
+</div>
+ 
+<script src="2.js"></script>
+</body>
+</html>
